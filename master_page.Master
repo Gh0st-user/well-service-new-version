@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master_page.master.cs" Inherits="E_library.master_page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="files/css/style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <%--Main content Start--%>
+    <form id="form1" runat="server">
+        <div>
+            <%--  Header Start  --%>
+
+            <header id="header" class="container-fluid py-0">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-4 me-auto">
+                            <h3 class="mb-0">Well Service</h3>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end align-items-center">
+                            <asp:HyperLink CssClass="btn" ID="HyperLink6" runat="server" NavigateUrl="~/files/html/sign-up.aspx">Sign-up</asp:HyperLink>
+                            <asp:HyperLink CssClass="btn" ID="HyperLink5" runat="server" NavigateUrl="~/files/html/login.aspx">Login</asp:HyperLink>
+                            <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Logout" OnClick="Log_out" Visible="False"/>
+                            <asp:HyperLink CssClass="btn" ID="HyperLink8" runat="server" Visible="False">Hello</asp:HyperLink>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <%--<img src="~/files/img/cross.png" width="25" runat="server"/>--%>
+                    <div class="container p-0">
+                        <ul class="nav nav-bar">
+                            <li class="nav-item">
+                                <asp:HyperLink ID="HyperLink1" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/home.aspx">Home</asp:HyperLink>
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink  ID="HyperLink2" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/about.aspx">About</asp:HyperLink>
+                            </li>
+                            <li id="nav_ser_btn" class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                                <div id="drop_down_ser">
+                                    <ul class="nav rounded-2" style="background-color: var(--white);border: 2px solid var(--light);">
+                                        <li class="nav-item d-block">
+                                            <asp:HyperLink ID="HyperLink3" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/login.aspx" Visible="True" ViewStateMode="Enabled">Documentation</asp:HyperLink>
+                                        </li>
+
+                                        <li class="nav-item d-block">
+                                            <a class="nav-link" href="#">Apply</a>
+                                        </li>
+
+                                        <li class="nav-item d-block">
+                                            <a class="nav-link" href="#">Work Status</a>
+                                        </li>
+
+                                        <li class="nav-item d-block">
+                                            <a class="nav-link" href="#">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink ID="HyperLink4" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/contact.aspx">Contact</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <%--  Header End  --%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%-- Footer Start --%>
+            <%--<footer class="container-fluid border py-3 shadow">
+                <div class="container">
+                    <h3 class="m-0">
+                        Footer
+                    </h3>
+                </div>
+            </footer>--%>
+            <%-- Footer End --%>
+        </div>
+    </form>
+    <%-- Main content End --%>
+    
+
+</body>
+</html>
