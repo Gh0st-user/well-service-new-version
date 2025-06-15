@@ -17,7 +17,8 @@ namespace E_library
                 {
                     HyperLink6.Visible = true; // displays sign-up link for users
                     HyperLink5.Visible = true; // displays login link for users
-                    HyperLink3.NavigateUrl = "files/html/login.aspx"; // Documentation page before login link
+                    HyperLink3.NavigateUrl = "files/html/login.aspx"; // Documentation page before login
+                    HyperLink7.NavigateUrl = "files/html/login.aspx"; // Apply page before login
                     Button1.Visible = false; // Hide logout link for users
                     HyperLink8.Visible = false; // Hide user name link after logout 
                 }
@@ -26,7 +27,8 @@ namespace E_library
                     HyperLink6.Visible = false; // displays sign-up link for users
                     HyperLink5.Visible = false; // displays login link for users
                     Button1.Visible = true;// Hide logout link for users
-                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page after login link
+                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page after login 
+                    HyperLink7.NavigateUrl = "files/html/apply.aspx"; // Apply page before login link
                     HyperLink8.Visible = true;
                     HyperLink8.Text = Session["user_name"].ToString();
 
@@ -36,7 +38,8 @@ namespace E_library
                     HyperLink6.Visible = false; // displays sign-up link for users
                     HyperLink5.Visible = false; // displays login link for users
                     Button1.Visible = true;// Hide logout link for users
-                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page after login link
+                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page after login 
+                    HyperLink7.NavigateUrl = "files/html/apply.aspx"; // Apply page before login
                     HyperLink8.Visible = true;
                     HyperLink8.Text = Session["user_name"].ToString();
                 }
@@ -59,6 +62,8 @@ namespace E_library
             HyperLink3.NavigateUrl = "files/html/login.aspx"; // Documentation page before login link
             Button1.Visible = false; // Hide logout link for users
             HyperLink8.Visible = false; // Hide user name link after logout
+
+            Response.Redirect("home.aspx");
         }
     }
 }

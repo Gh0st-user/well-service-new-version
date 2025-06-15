@@ -120,6 +120,7 @@
     <Content Include="files\css\style.css" />
     <Content Include="files\html\about.aspx" />
     <Content Include="files\html\admin_login.aspx" />
+    <Content Include="files\html\apply.aspx" />
     <Content Include="files\html\contact.aspx" />
     <Content Include="files\html\home.aspx" />
     <Content Include="files\html\login.aspx" />
@@ -217,6 +218,13 @@
     </Compile>
     <Compile Include="files\html\admin_login.aspx.designer.cs">
       <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="files\html\apply.aspx.cs">
+      <DependentUpon>apply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="files\html\apply.aspx.designer.cs">
+      <DependentUpon>apply.aspx</DependentUpon>
     </Compile>
     <Compile Include="files\html\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>

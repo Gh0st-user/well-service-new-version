@@ -21,7 +21,7 @@ section{
     <div class="container-fluid bg-success">
         <div class="container">
             <h5 class="py-3">
-                &copy;ghost
+                &copy;ghostrider
             </h5>
         </div>
     </div>

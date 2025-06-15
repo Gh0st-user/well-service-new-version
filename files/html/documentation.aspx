@@ -16,7 +16,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <section id="container" class="container-fluid"> 
+    <section id="container" class="container-fluid">
+        <%-- SEARCHING SECTION START --%>
+        <div class="container border py-3">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="text-secondary">Services / Documentation</div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-12">
+                    <asp:TextBox ID="TextBox1" runat="server" TextMode="Search" CssClass="ps-3 py-2" placeholder="Search your work here."></asp:TextBox>
+                    <asp:Button ID="Button1" CssClass="py-2 px-3" runat="server" Text="Search" />
+                </div>
+            </div>
+        </div>
+        <%-- SEARCHING SECTION END --%>
         <div class="container">
             <div class="row">
                 <%-- 1 --%>
@@ -25,7 +40,7 @@
                         <center>
                             <h4>AADHAAR
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -37,7 +52,7 @@
                         <center>
                             <h4>PAN
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -49,7 +64,7 @@
                         <center>
                             <h4>VOTER ID
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -61,7 +76,7 @@
                         <center>
                             <h4>DOMICILE
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -75,7 +90,7 @@
                         <center>
                             <h4>GAZETTE CERTIFICATE
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -87,7 +102,7 @@
                         <center>
                             <h4>FOOD LICENSE
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -99,7 +114,7 @@
                         <center>
                             <h4>GUMASTA
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
@@ -111,7 +126,7 @@
                         <center>
                             <h4>UDYAM
                             </h4>
-                            <p>
+                            <p class="text-secondary">
                                 Aadhaar is the identity proof not the Birth and Citizenship proof.
                             </p>
                         </center>
