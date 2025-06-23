@@ -11,7 +11,11 @@ namespace E_library.files.html
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Session checking
+            if (Session["role"] == null)
+            {
+                Response.Redirect("~/files/html/login.aspx");
+            }
         }
     }
 }

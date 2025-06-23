@@ -1,21 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="voting.aspx.cs" Inherits="E_library.files.html.voting" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
-/* BACK BUTTON START */
-
-/*#back{
-    display: inline-block;
-    margin: 20px 0px;
-    padding: 10px 20px;
-    margin-left: 100px;
-    background-color: var(--black);
-    font-weight: 900;
-    color: var(--white);
-    box-shadow: var(--shadow);
-    text-decoration: none;
-}*/
-
-/* BACK BUTTON END */
 /* CONTAINER START */
 
 .container_2{
@@ -126,68 +111,70 @@
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!-- BACK-BTN-START -->
-
-<%--<a id="back" href="../html/index.html">Back</a>--%>
-
-<!-- BACK-BTN-END -->
 <!-- CONTAINER START-->
 <div class="container_2">
     <!-- FORM START -->
     <div class="question">
         <div class="item" style="display: flex;justify-content: space-between;">
-            <h3>Voting card documentation</h3>
+            <h3>Voting card works</h3>
         </div>
         <div class="item">
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="new_apply" type="checkbox" style="margin-right: 10px;">
                 <label for="new_apply">
                     New Apply
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="name_correction" type="checkbox" style="margin-right: 10px;">
                 <label for="name_correction">
                     Name Correction
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="dob" type="checkbox" style="margin-right: 10px;">
                 <label for="dob">
                     DOB
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="family_details" type="checkbox" style="margin-right: 10px;">
                 <label for="family_details">
                     Family Details
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="address" type="checkbox" style="margin-right: 10px;">
                 <label for="address">
                     Address
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="mobile_no" type="checkbox" style="margin-right: 10px;">
                 <label for="mobile_no">
                     Mobile
                 </label>
             </span>
             <!--  -->
-            <span style="display: flex;margin-top: 10px;">
+            <span style="display: flex; margin-top: 10px;">
                 <input id="state" type="checkbox" style="margin-right: 10px;">
                 <label for="state">
                     State Change
                 </label>
             </span>
             <!--  -->
+            <%--  --%>
+            <span style="display: flex; margin-top: 10px;">
+                <input id="photo" type="checkbox" style="margin-right: 10px;">
+                <label for="new_apply">
+                    Photo change
+                </label>
+            </span>
         </div>
         <div class="item">
             <input type="button" id="submit-btn" style="padding: 10px 15px;font-weight: 900;cursor: pointer;" value="Submit">
@@ -206,7 +193,7 @@
         <!-- NEW APPLY START -->
         <div class="new-inner item">
             <div class="work">NEW APPLY</div>
-            <div class="requirements">1</div>    
+            <div class="requirements">1</div>
         </div>
         <!-- NAME CORRECTION START -->
         <div class="name-inner item">
@@ -238,6 +225,11 @@
             <div class="work">STATE CHANGE</div>
             <div class="requirements">7</div>
         </div>
+        <!-- PHOTO START -->
+        <div class="photo-inner item">
+            <div class="work">PHOTO</div>
+            <div class="requirements">8</div>
+        </div>
     </div>
     <!-- ANSWER END -->
 </div>
@@ -253,9 +245,10 @@
         var address = document.getElementById("address");
         var mobile_no = document.getElementById("mobile_no");
         var state = document.getElementById("state");
+        var photo = document.getElementById("photo");
 
-        var input_arry = [new_aply, name_correction, dob, family_details, address, mobile_no, state]
-        var arry = [false, false, false, false, false, false, false, false];
+        var input_arry = [new_aply, name_correction, dob, family_details, address, mobile_no, state, photo];
+        var arry = [false, false, false, false, false, false, false, false, false];
         var dict = {
             0 : "new-inner",
             1 : "name-inner",
@@ -263,11 +256,12 @@
             3 : "family-inner",
             4 : "address-inner",
             5 : "mobile-inner",
-            6 : "state-inner",
+            6: "state-inner",
+            7: "photo-inner"
         };
         // SUBMIT BTN ONCLICK EVENT
         $("#submit-btn").click(function () {
-            for(var i = 0; i <= 6; i++){
+            for(var i = 0; i <= 7; i++){
                 if(input_arry[i].checked){
                     $("." + dict[i]).css("display", "grid");
                 }   

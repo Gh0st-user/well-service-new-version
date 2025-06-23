@@ -38,14 +38,14 @@ section{
                 <label for="TextBox2">
                     Middle Name : 
                 </label>
-                <asp:TextBox ID="TextBox2" runat="server" required="true"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6 mt-3 field_con">
                 <label for="TextBox3">
                     Last Name : 
                 </label>
-                <asp:TextBox ID="TextBox3" runat="server" required="true"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6 mt-3 field_con">

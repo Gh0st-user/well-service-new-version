@@ -25,47 +25,9 @@
                 </div>
             </div>
             <%--  SEARCHING PART ENDED HERE --%>
-            <%--  WORKS PART START HERE --%>
+            <%--  WORKS PART STARTS HERE --%>
             <div class="row">
-                <%-- AADHAAR STARTS HERE --%>
-                <div class="col-12 border py-3">
-                    <h3>
-                        AADHAAR
-                    </h3>
-                    <p class="text-secondary">
-                        Lorem ipsum doller etc joker ghost.
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <asp:RadioButton ID="RadioButton1" runat="server" GroupName="r" Text="&nbsp;New Apply" />
-                        </div>
-                        <div class="col">
-                            <asp:RadioButton ID="RadioButton2" runat="server" GroupName="r" Text="&nbsp;Update Existing" />
-                        </div>
-                        <div class="col">
-                            <asp:Button ID="Button2" runat="server" Text="Go" />
-                        </div>
-                    </div>
-                </div>
-                <%-- PAN STARTS HERE --%>
-                <div class="col-12 border py-3">
-                    <h3>PAN
-                    </h3>
-                    <p class="text-secondary">
-                        Lorem ipsum doller etc joker ghost.
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <asp:RadioButton ID="RadioButton3" runat="server" GroupName="r" Text="&nbsp;New Apply" />
-                        </div>
-                        <div class="col">
-                            <asp:RadioButton ID="RadioButton4" runat="server" GroupName="r" Text="&nbsp;Update Existing" />
-                        </div>
-                        <div class="col">
-                            <asp:Button ID="Button3" runat="server" Text="Go" />
-                        </div>
-                    </div>
-                </div>
+               
                 <%-- VOTING STARTS HERE --%>
                 <div class="col-12 border py-3">
                     <h3>VOTER ID
@@ -75,10 +37,10 @@
                     </p>
                     <div class="row">
                         <div class="col">
-                            <asp:RadioButton ID="RadioButton5" runat="server" GroupName="r" Text="&nbsp;New Apply" />
+                            <asp:RadioButton ID="RadioButton5" runat="server" GroupName="v" Text="&nbsp;New Apply" />
                         </div>
                         <div class="col">
-                            <asp:RadioButton ID="RadioButton6" runat="server" GroupName="r" Text="&nbsp;Update Existing" />
+                            <asp:RadioButton ID="RadioButton6" runat="server" GroupName="v" Text="&nbsp;Update" />
                         </div>
                         <div class="col">
                             <asp:Button ID="Button4" runat="server" Text="Go" />
@@ -86,33 +48,10 @@
                     </div>
                 </div>
                 <%-- DOMICILE STARTS HERE --%>
-                <div class="col-12 border py-3">
-                    <h3>DOMICILE
-                    </h3>
-                    <p class="text-secondary">
-                        Lorem ipsum doller etc joker ghost.
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <asp:Button ID="Button5" runat="server" Text="Go" />
-                        </div>
-                    </div>
-                </div>
-                <%-- GAZETTE STARTS HERE --%>
-                <div class="col-12 border py-3">
-                    <h3>GAZETTE CERTIFICATE
-                    </h3>
-                    <p class="text-secondary">
-                        Lorem ipsum doller etc joker ghost.
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <asp:Button ID="Button6" runat="server" Text="Go" />
-                        </div>
-                    </div>
-                </div>
             </div>
             <%--  WORKS PART ENDED HERE --%>
         </div>
     </section>
+
+
 </asp:Content>

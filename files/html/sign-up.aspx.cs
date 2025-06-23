@@ -23,14 +23,25 @@ namespace E_library.files.html
         // ON SUBMIT BUTTON CLICK EVENT START
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(check_user_exists())
+            // Confirm password logic
+
+            string password = TextBox9.Text;
+            string confirm_pass = TextBox10.Text;
+            if (password == confirm_pass)
             {
-                Response.Write("<script>alert('User already exists with this username, try another username');</script>");
-                return;
+                if (check_user_exists())
+                {
+                    Response.Write("<script>alert('User already exists with this username, try another username');</script>");
+                    return;
+                }
+                else
+                {
+                    new_sign_up();
+                }
             }
             else
             {
-                new_sign_up();
+                Response.Write("<script>alert('Password does not match.')</script>");
             }
         }
 

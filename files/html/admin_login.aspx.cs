@@ -18,6 +18,7 @@ namespace E_library.files.html
 
         }
 
+        // Admin Login Button Clicked
         protected void Button1_Click(object sender, EventArgs e)
         {
             try
@@ -41,7 +42,7 @@ namespace E_library.files.html
                         Session["user_name"] = dr.GetValue(0).ToString();
                         Session["role"] = "admin";
                     }
-                    Response.Redirect("home.aspx");
+                    Response.Redirect("~/files/html/admin_pages/members_detail.aspx");
                 }
                 else
                 {

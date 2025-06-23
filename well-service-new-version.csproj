@@ -120,6 +120,7 @@
     <Content Include="files\css\style.css" />
     <Content Include="files\html\about.aspx" />
     <Content Include="files\html\admin_login.aspx" />
+    <Content Include="files\html\admin_pages\members_detail.aspx" />
     <Content Include="files\html\apply.aspx" />
     <Content Include="files\html\contact.aspx" />
     <Content Include="files\html\home.aspx" />
@@ -172,6 +173,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="master_page.Master" />
+    <Content Include="admin_master_page.Master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -203,6 +205,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_master_page.Master.cs">
+      <DependentUpon>admin_master_page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_master_page.Master.designer.cs">
+      <DependentUpon>admin_master_page.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="files\html\about.aspx.cs">
@@ -218,6 +227,13 @@
     </Compile>
     <Compile Include="files\html\admin_login.aspx.designer.cs">
       <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="files\html\admin_pages\members_detail.aspx.cs">
+      <DependentUpon>members_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="files\html\admin_pages\members_detail.aspx.designer.cs">
+      <DependentUpon>members_detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="files\html\apply.aspx.cs">
       <DependentUpon>apply.aspx</DependentUpon>

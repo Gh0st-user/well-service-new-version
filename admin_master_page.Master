@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin_master_page.master.cs" Inherits="E_library.admin_master_page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="files/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- SIDE NAV BAR STARTS FROM HERE -->
+
+            <asp:Panel CssClass="ghost" style="z-index: 100;position: absolute;top: 0px;left: 0px;width: 280px;height: 100vh;background-color: var(--black);" ID="Panel1" runat="server" Visible="False">
+                <div>
+                    <asp:Label ID="Label1" runat="server" Text="" Font-Size="20" style="padding: 0px 12px;" CssClass="fw-bold mb-5"></asp:Label>
+                    <asp:ImageButton ID="ImageButton2"  Width="25" runat="server" OnClick="Side_nav_btn" ImageUrl="~/files/img/menu.png" />
+                    <div class="mt-3">
+                        <!-- SOME BTNS -->
+                        <asp:HyperLink CssClass="d-block btn text-start text-white" ID="HyperLink1" runat="server">Members Sign-up Details</asp:HyperLink>
+                        <asp:HyperLink CssClass="d-block btn text-start text-white" ID="HyperLink2" runat="server">Works</asp:HyperLink>
+                        <asp:HyperLink CssClass="d-block btn text-start text-white" ID="HyperLink3" runat="server">Services</asp:HyperLink>
+                        <asp:HyperLink CssClass="d-block btn text-start text-white" ID="HyperLink4" runat="server">Contact</asp:HyperLink>
+                        <!-- LOGOUT BTN -->
+                        <asp:Button  CssClass="d-block btn text-start text-white" ID="Button1" runat="server" Text="Logout" OnClick="Log_out" Visible="False" />
+                    </div>
+                </div>
+            </asp:Panel>
+
+            <!-- SIDE NAV BAR ENDS UP HERE -->
+            <header id="header" class="container-fluid py-0">
+                <!-- HEADER STARTS FROM HERE -->
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-md-3 col-5 d-flex align-items-center me-auto">
+                            <h3 class="mb-0">Admin</h3>
+                        </div>
+                        <div class="col-md-3 col-6 d-flex justify-content-end align-items-center">
+                            <asp:HyperLink CssClass="btn" ID="HyperLink6" runat="server" NavigateUrl="~/files/html/sign-up.aspx">Sign-up</asp:HyperLink>
+                            <asp:HyperLink CssClass="btn" ID="HyperLink5" runat="server" NavigateUrl="~/files/html/login.aspx">Login</asp:HyperLink>
+
+                            <asp:HyperLink CssClass="btn" ID="HyperLink8" runat="server" Visible="False">Hello</asp:HyperLink>
+                            <div class="btn d-flex align-items-center">
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/files/img/profile-user.png" Width="25" OnClick="Side_nav_btn" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HEADER ENDS HERE -->
+                <!-- NAVIGATION-LINK STARTS FROM HERE -->
+                <div>
+                    <div class="container p-0">
+                        <ul class="nav nav-bar">
+                            <li class="nav-item">
+                                <asp:HyperLink ID="HyperLink9" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/admin_pages/members_detail.aspx">Members Detail</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- NAVIGATION-LINK ENDS HERE -->
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

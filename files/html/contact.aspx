@@ -19,15 +19,7 @@ section{
         <h1 class="container py-5" align="center">Contact Page.</h1>
     </div>
     <%-- HERO SECTION END --%>
-    <%-- FOOTER START --%>
-    <div class="container-fluid bg-success">
-        <div class="container">
-            <h5 class="py-3">
-                &copy;ghost
-            </h5>
-        </div>
-    </div>
-    <%-- FOOTER END --%>
+
 </section>
 
 </asp:Content>

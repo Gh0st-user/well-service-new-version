@@ -136,6 +136,11 @@
     <!-- FORM START -->
     <div class="form">
         <div class="item">
+            <h2 style="color: var(--white);">
+                Pan card works
+            </h2>
+        </div>
+        <div class="item">
             <label for="select" style="font-weight: 900;">Select Type : </label>
             <select id="select">
                 <option value="--SELECT TYPE--" selected>--Select Type--</option>
@@ -191,6 +196,11 @@
     <!-- FORM END -->
     <!-- DOCUMENTATION START -->
     <div class="answer">
+        <div style="color: var(--white);background-color: var(--black);padding: 10px 15px 10px 15px;border: 1px solid var(--white);">
+            <h2>
+                Documentation
+            </h2>
+        </div>
         <!-- HEADER -->
         <div class="header">
             <div>WORK</div>
