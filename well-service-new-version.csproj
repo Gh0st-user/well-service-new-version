@@ -118,18 +118,18 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="files\css\style.css" />
-    <Content Include="files\html\about.aspx" />
-    <Content Include="files\html\admin_login.aspx" />
+    <Content Include="files\html\start_pages\about.aspx" />
+    <Content Include="files\html\login_pages\admin_login.aspx" />
     <Content Include="files\html\admin_pages\members_detail.aspx" />
-    <Content Include="files\html\apply.aspx" />
-    <Content Include="files\html\contact.aspx" />
-    <Content Include="files\html\home.aspx" />
-    <Content Include="files\html\login.aspx" />
-    <Content Include="files\html\sign-up.aspx" />
-    <Content Include="files\html\tasks\gazette.aspx" />
-    <Content Include="files\html\documentation.aspx" />
-    <Content Include="files\html\tasks\pan-card.aspx" />
-    <Content Include="files\html\tasks\voting.aspx" />
+    <Content Include="files\html\start_pages\services\apply.aspx" />
+    <Content Include="files\html\start_pages\contact.aspx" />
+    <Content Include="files\html\start_pages\home.aspx" />
+    <Content Include="files\html\login_pages\login.aspx" />
+    <Content Include="files\html\login_pages\sign-up.aspx" />
+    <Content Include="files\html\start_pages\services\documentation_tasks\gazette.aspx" />
+    <Content Include="files\html\start_pages\services\documentation.aspx" />
+    <Content Include="files\html\start_pages\services\documentation_tasks\pan-card.aspx" />
+    <Content Include="files\html\start_pages\services\documentation_tasks\voting.aspx" />
     <Content Include="files\img\aadhaar.png" />
     <Content Include="files\img\call.png" />
     <Content Include="files\img\cross.png" />
@@ -172,8 +172,8 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="master_page.Master" />
-    <Content Include="admin_master_page.Master" />
+    <Content Include="master_page\master_page.Master" />
+    <Content Include="admin_master_page\admin_master_page.Master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -205,27 +205,27 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin_master_page.Master.cs">
+    <Compile Include="admin_master_page\admin_master_page.Master.cs">
       <DependentUpon>admin_master_page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin_master_page.Master.designer.cs">
+    <Compile Include="admin_master_page\admin_master_page.Master.designer.cs">
       <DependentUpon>admin_master_page.Master</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="files\html\about.aspx.cs">
+    <Compile Include="files\html\start_pages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\about.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\admin_login.aspx.cs">
+    <Compile Include="files\html\login_pages\admin_login.aspx.cs">
       <DependentUpon>admin_login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\admin_login.aspx.designer.cs">
+    <Compile Include="files\html\login_pages\admin_login.aspx.designer.cs">
       <DependentUpon>admin_login.aspx</DependentUpon>
     </Compile>
     <Compile Include="files\html\admin_pages\members_detail.aspx.cs">
@@ -235,77 +235,77 @@
     <Compile Include="files\html\admin_pages\members_detail.aspx.designer.cs">
       <DependentUpon>members_detail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\apply.aspx.cs">
+    <Compile Include="files\html\start_pages\services\apply.aspx.cs">
       <DependentUpon>apply.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\apply.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\services\apply.aspx.designer.cs">
       <DependentUpon>apply.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\contact.aspx.cs">
+    <Compile Include="files\html\start_pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\contact.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\home.aspx.cs">
+    <Compile Include="files\html\start_pages\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\home.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\login.aspx.cs">
+    <Compile Include="files\html\login_pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\login.aspx.designer.cs">
+    <Compile Include="files\html\login_pages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\sign-up.aspx.cs">
+    <Compile Include="files\html\login_pages\sign-up.aspx.cs">
       <DependentUpon>sign-up.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\sign-up.aspx.designer.cs">
+    <Compile Include="files\html\login_pages\sign-up.aspx.designer.cs">
       <DependentUpon>sign-up.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\tasks\gazette.aspx.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\gazette.aspx.cs">
       <DependentUpon>gazette.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\tasks\gazette.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\gazette.aspx.designer.cs">
       <DependentUpon>gazette.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\documentation.aspx.cs">
+    <Compile Include="files\html\start_pages\services\documentation.aspx.cs">
       <DependentUpon>documentation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\documentation.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\services\documentation.aspx.designer.cs">
       <DependentUpon>documentation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\tasks\pan-card.aspx.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\pan-card.aspx.cs">
       <DependentUpon>pan-card.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\tasks\pan-card.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\pan-card.aspx.designer.cs">
       <DependentUpon>pan-card.aspx</DependentUpon>
     </Compile>
-    <Compile Include="files\html\tasks\voting.aspx.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\voting.aspx.cs">
       <DependentUpon>voting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="files\html\tasks\voting.aspx.designer.cs">
+    <Compile Include="files\html\start_pages\services\documentation_tasks\voting.aspx.designer.cs">
       <DependentUpon>voting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="master_page.Master.cs">
+    <Compile Include="master_page\master_page.Master.cs">
       <DependentUpon>master_page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="master_page.Master.designer.cs">
+    <Compile Include="master_page\master_page.Master.designer.cs">
       <DependentUpon>master_page.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -14,7 +14,7 @@ namespace E_library.files.html
             // Session checking
             if (Session["role"] == null)
             {
-                Response.Redirect("~/files/html/login.aspx");
+                Response.Redirect("~/files/html/login_pages/login.aspx");
             }
         }
     }

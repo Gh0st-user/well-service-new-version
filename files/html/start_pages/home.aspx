@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="E_library.files.html.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page/master_page.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="E_library.files.html.home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
 
@@ -22,7 +22,7 @@ section{
             <p>
                 Lorem ipsum joker fd and ipsum joker fd and ipsum joker fd and.
             </p>
-            <input type="button" id="btn" value="Start" onclick="button()" class="py-2 px-5 rounded-5 border-0 btn btn-primary"/>
+            <input type="button" id="btn" value="Start" class="py-2 px-5 rounded-5 border-0 btn btn-primary"/>
         </div>
     </div>
     <%-- HERO SECTION END --%>
@@ -75,14 +75,4 @@ section{
     <!-- OUR SERVICES END -->
  
 </section> 
-<script>
-
-    
-    function button() {
-        window.location = "login.aspx";
-        //var btn = document.getElementById("btn");
-        //btn.style.color = "red";
-    }
-
-</script>
 </asp:Content>

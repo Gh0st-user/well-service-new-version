@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="sign-up.aspx.cs" Inherits="E_library.files.html.sign_up" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page/master_page.Master" AutoEventWireup="true" CodeBehind="sign-up.aspx.cs" Inherits="E_library.files.html.sign_up" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
 

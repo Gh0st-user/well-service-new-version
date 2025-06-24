@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="admin_login.aspx.cs" Inherits="E_library.files.html.admin_login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page/master_page.Master" AutoEventWireup="true" CodeBehind="admin_login.aspx.cs" Inherits="E_library.files.html.admin_login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 <style>
@@ -30,7 +30,7 @@ section{
                 <asp:Button ID="Button1" CssClass="btn btn-primary" runat="server" Text="Login" OnClick="Button1_Click" />
                 <br />
                 <br />
-                <a href="login.aspx" runat="server">User login</a>
+                <a href="~/files/html/login_pages/login.aspx" runat="server">User login</a>
             </div>
         </center>
     </div>

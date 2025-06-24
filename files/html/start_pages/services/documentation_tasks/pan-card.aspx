@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="pan-card.aspx.cs" Inherits="E_library.files.html.pan_card" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page/master_page.Master" AutoEventWireup="true" CodeBehind="pan-card.aspx.cs" Inherits="E_library.files.html.pan_card" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
 /* CONTAINER START */
@@ -132,7 +132,7 @@
 <!-- BACK BUTTON END -->
 <!-- CONTAINER START-->
 
-<div class="container_2">
+<div class="container_2 shadow-lg py-5 rounded container">
     <!-- FORM START -->
     <div class="form">
         <div class="item">
@@ -165,6 +165,12 @@
                 </label>
             </div>
             <br>
+            <div>
+                <label>
+                    -----  Updates  -----
+                </label>
+            </div>
+            <br />
             <div style="display: flex;">
                 <input type="checkbox" id="name">
                 <label for="name">

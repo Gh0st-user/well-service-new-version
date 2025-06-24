@@ -13,7 +13,7 @@ namespace E_library.files.html.admin_pages
         {
             if (Session["role"] == null)
             {
-                Response.Redirect("~/files/html/login.aspx");
+                Response.Redirect("~/files/html/login_pages/login.aspx");
             }
         }
     }

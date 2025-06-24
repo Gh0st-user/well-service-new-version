@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page.Master" AutoEventWireup="true" CodeBehind="voting.aspx.cs" Inherits="E_library.files.html.voting" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master_page/master_page.Master" AutoEventWireup="true" CodeBehind="voting.aspx.cs" Inherits="E_library.files.html.voting" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
 /* CONTAINER START */
@@ -125,6 +125,12 @@
                     New Apply
                 </label>
             </span>
+            <!--  -->
+            <div style="margin-top: 10px;">
+                <label>
+                    -----  Updates  -----
+                </label>
+            </div>
             <!--  -->
             <span style="display: flex; margin-top: 10px;">
                 <input id="name_correction" type="checkbox" style="margin-right: 10px;">

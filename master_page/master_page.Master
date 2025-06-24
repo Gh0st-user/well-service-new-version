@@ -23,8 +23,8 @@
                             <h3 class="mb-0">Ghost</h3>
                         </div>
                         <div class="col-md-3 col-6 d-flex justify-content-end align-items-center">
-                            <asp:HyperLink CssClass="btn" ID="HyperLink6" runat="server" NavigateUrl="~/files/html/sign-up.aspx">Sign-up</asp:HyperLink>
-                            <asp:HyperLink CssClass="btn" ID="HyperLink5" runat="server" NavigateUrl="~/files/html/login.aspx">Login</asp:HyperLink>
+                            <asp:HyperLink CssClass="btn" ID="HyperLink6" runat="server" NavigateUrl="~/files/html/login_pages/sign-up.aspx">Sign-up</asp:HyperLink>
+                            <asp:HyperLink CssClass="btn" ID="HyperLink5" runat="server" NavigateUrl="~/files/html/login_pages/login.aspx">Login</asp:HyperLink>
                             <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Logout" OnClick="Log_out" Visible="False" />
                             <asp:HyperLink CssClass="btn" ID="HyperLink8" runat="server" Visible="False">Hello</asp:HyperLink>
                             <div class="btn" id="Profile_icon" runat="server" visible="false">
@@ -35,25 +35,25 @@
                 </div>
                 <!-- HEADER ENDS HERE -->
                 <!-- NAVIGATION-LINK STARTS FROM HERE -->
-                <div>
+                <div class="border-bottom">
                     <div class="container p-0">
                         <ul class="nav nav-bar">
                             <li class="nav-item">
-                                <asp:HyperLink ID="HyperLink1" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/home.aspx">Home</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink1" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/start_pages/home.aspx">Home</asp:HyperLink>
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink ID="HyperLink2" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/about.aspx">About</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink2" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/start_pages/about.aspx">About</asp:HyperLink>
                             </li>
                             <li id="nav_ser_btn" class="nav-item">
                                 <a href="#" class="nav-link">Services</a>
                                 <div id="drop_down_ser">
                                     <ul class="nav rounded-2" style="background-color: var(--white); border: 2px solid var(--light);">
                                         <li class="nav-item d-block">
-                                            <asp:HyperLink ID="HyperLink3" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/login.aspx" Visible="True" ViewStateMode="Enabled">Documentation</asp:HyperLink>
+                                            <asp:HyperLink ID="HyperLink3" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/login_pages/login.aspx" Visible="True" ViewStateMode="Enabled">Documentation</asp:HyperLink>
                                         </li>
 
                                         <li class="nav-item d-block">
-                                            <asp:HyperLink ID="HyperLink7" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/login.aspx">Apply</asp:HyperLink>
+                                            <asp:HyperLink ID="HyperLink7" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/login_pages/login.aspx">Apply</asp:HyperLink>
                                         </li>
 
                                         <li class="nav-item d-block">
@@ -63,7 +63,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink ID="HyperLink4" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/contact.aspx">Contact</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink4" CssClass="nav-link" runat="server" NavigateUrl="~/files/html/start_pages/contact.aspx">Contact</asp:HyperLink>
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink ID="HyperLink9" CssClass="nav-link" runat="server" Visible="False" NavigateUrl="~/files/html/admin_pages/members_detail.aspx">Members Detail</asp:HyperLink>
@@ -76,7 +76,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             <%-- FOOTER START --%>
-            <div class="container-fluid bg-success">
+            <div class="container-fluid bg-success mt-5">
                 <div class="container">
                     <h5 class="py-3">&copy;ghostrider
                     </h5>

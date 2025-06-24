@@ -19,8 +19,8 @@ namespace E_library
                     // LINKS TO HIDE FOR UNSIGN-UP USERS
                     HyperLink6.Visible = true; // Hides sign-up link for users
                     HyperLink5.Visible = true; // Hides login link for users
-                    HyperLink3.NavigateUrl = "files/html/login.aspx"; // Documentation page redirects to login page for unsign-up users
-                    HyperLink7.NavigateUrl = "files/html/login.aspx"; // Apply page redirects to login page for unsign-up users
+                    HyperLink3.NavigateUrl = "~/files/html/login_pages/login.aspx"; // Documentation page redirects to login page for unsign-up users
+                    HyperLink7.NavigateUrl = "~/files/html/login_pages/login.aspx"; // Apply page redirects to login page for unsign-up users
                     // LINKS TO DISPLAY UNSIGN-UP FOR USERS
                     Button1.Visible = false; // Shows logout link for users
                     HyperLink8.Visible = false; // Shows user name link for users
@@ -32,8 +32,8 @@ namespace E_library
                     // LINKS TO HIDE FOR USERS
                     HyperLink6.Visible = false; // Hides sign-up link for users
                     HyperLink5.Visible = false; // Hides login link for users
-                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page redirects to correct page for loged users
-                    HyperLink7.NavigateUrl = "files/html/apply.aspx"; // Apply page redirects to correct page for loged users
+                    HyperLink3.NavigateUrl = "~/files/html/start_pages/services/documentation.aspx"; // Documentation page redirects to correct page for loged users
+                    HyperLink7.NavigateUrl = "~/files/html/start_pages/services/apply.aspx"; // Apply page redirects to correct page for loged users
                     // LINKS TO DISPLAY FOR USERS
                     Button1.Visible = true; // Shows logout link for users
                     HyperLink8.Visible = true; // Shows user name link for users
@@ -46,8 +46,8 @@ namespace E_library
                     // LINKS TO HIDE FOR ADMIN
                     HyperLink6.Visible = false; // Hides sign-up link for admin
                     HyperLink5.Visible = false; // Hides login link for admin
-                    HyperLink3.NavigateUrl = "files/html/documentation.aspx"; // Documentation page redirects to correct page for loged admin
-                    HyperLink7.NavigateUrl = "files/html/apply.aspx"; // Apply page redirects to correct page for loged admin
+                    HyperLink3.NavigateUrl = "files/html/start_pages/services/documentation.aspx"; // Documentation page redirects to correct page for loged admin
+                    HyperLink7.NavigateUrl = "files/html/start_pages/services/apply.aspx"; // Apply page redirects to correct page for loged admin
                     // LINKS TO DISPLAY FOR ADMIN
                     Button1.Visible = true; // Shows logout link for admin
                     HyperLink8.Visible = true; // Shows user name link for admin
@@ -79,9 +79,9 @@ namespace E_library
             // LINKS TO DISPLAY FOR LOGGED OUT USERS
             HyperLink6.Visible = true; // Displays sign-up link for unsign-up users
             HyperLink5.Visible = true; // displays login link for unsign-up users
-            HyperLink3.NavigateUrl = "files/html/login.aspx"; // Documentation page redirects to login page for unsign-up users
-            HyperLink7.NavigateUrl = "files/html/login.aspx"; // Apply page redirects to login page for unsign-up users
-            Response.Redirect("~/files/html/home.aspx");
+            HyperLink3.NavigateUrl = "~/files/html/login_pages/login.aspx"; // Documentation page redirects to login page for unsign-up users
+            HyperLink7.NavigateUrl = "~/files/html/login_pages/login.aspx"; // Apply page redirects to login page for unsign-up users
+            Response.Redirect("~/files/html/start_pages/home.aspx");
         }
 
     }

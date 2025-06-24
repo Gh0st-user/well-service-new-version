@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin_master_page.Master" AutoEventWireup="true" CodeBehind="members_detail.aspx.cs" Inherits="E_library.files.html.admin_pages.members_detail" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin_master_page/admin_master_page.Master" AutoEventWireup="true" CodeBehind="members_detail.aspx.cs" Inherits="E_library.files.html.admin_pages.members_detail" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         section {

@@ -42,7 +42,7 @@ namespace E_library.files.html
                         Session["first_name"] = dr.GetValue(0).ToString();
                         Session["role"] = "user";
                     }
-                    Response.Redirect("home.aspx");
+                    Response.Redirect("~/files/html/start_pages/home.aspx");
                 }
                 else
                 {

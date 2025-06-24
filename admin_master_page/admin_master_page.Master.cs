@@ -69,7 +69,7 @@ namespace E_library
             // LINKS TO DISPLAY FOR LOGGED OUT USERS
             HyperLink6.Visible = true; // Displays sign-up link for unsign-up users
             HyperLink5.Visible = true; // displays login link for unsign-up users
-            Response.Redirect("~/files/html/home.aspx");
+            Response.Redirect("~/files/html/start_pages/home.aspx");
         }
     }
 }
